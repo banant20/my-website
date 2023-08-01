@@ -1,0 +1,82 @@
+.header {
+  font-family: poppins, Arial, sans-serif;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+}
+
+.scrolled {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 8rem;
+  padding-top: 1.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding-left: 4rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+}
+
+.logo {
+  width: 170px; 
+  height: auto;
+  margin-left: 10rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 17px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 90%,
+      black 90%,
+      black 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: 300ms;
+}
+
+.navItem:hover {
+  color: #3399cc;
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #333;
+}
+

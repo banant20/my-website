@@ -1,0 +1,267 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+}
+
+.center {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-bottom: 3rem;
+    padding-right: 13rem;
+    font-family: poppins-medium, Arial, sans-serif;
+    padding-left: 13rem;
+}
+  
+  .title {
+    font-family: 'horizon', Arial, sans-serif;
+    font-size: 36px;
+    color: #3399CC;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .nowPlaying {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+    background-color: #f8f8f8;
+    width: 375px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    height: fit-content; 
+  }
+  
+  .nowPlaying:hover {
+    box-shadow: 0 4px 20px rgba(51, 153, 204, 0.5);
+    transition: color 0.3s ease, box-shadow 0.5s;
+    color: #3399CC;
+  }
+  
+  .songTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-right: 0.6rem;
+  }
+  
+  .artist {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .albumImage {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .spotifyLink {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+  
+  .spotifyLink:hover {
+    color: #3399CC;
+    transform: scale(1.1);
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .playbar {
+    width: 275px;
+    margin-bottom: 2rem;
+  }
+  
+  .currentlyPlayingText {
+    font-size: 17px;
+    margin-bottom: 1rem;
+    font-family: poppins, Arial, sans-serif;
+    text-align: center;
+  }
+
+  .currentlyPlayingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topHeader {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-family: poppins, Arial, sans-serif;
+  }
+  
+  
+  .artistCard {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 350px;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .artistCard:hover {
+    box-shadow: 0 4px 20px rgba(51, 153, 204, 0.5);
+    transition: color 0.3s ease, box-shadow 0.5s;
+  }
+
+  .artistCard:hover .topHeader {
+    color: #3399cc;
+    transition: color 0.3s ease;
+  }
+  
+  .artistLine {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  
+  .artistRank {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: right;
+  }
+  
+  .artistImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .artistName {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'horizon', Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .artistName:hover {
+    color: #3399CC;
+    transform: scale(1.2, 0,5);
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .artistName a {
+    color: inherit; /* Use the parent's text color */
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  .artistName a:hover {
+    color: #3399CC;
+    transform: scale(1.2, 0,5);
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  /* Add styles for the time range buttons */
+.timeRangeButtons {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .timeRangeButtons button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .timeRangeButtons button:hover {
+    color: #3399cc;
+    transform: scale(1.1);
+    transition: color 0.3s, transform 0.3s;
+  }
+    
+  .activeButton {
+    color: #3399cc;
+    font-weight: bold;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Rest of the CSS remains the same */
+  
+  .cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsWrapper {
+  position: relative;
+}
+
+.cardsText {
+  position: absolute;
+  top: -3rem; /* Adjust the vertical position as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'horizon', Arial, sans-serif;
+  font-size: 20px;
+  color: #3399CC;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem; /* Adjust the vertical spacing as needed */
+}
+
+.songName {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'horizon', Arial, sans-serif;
+  }
+
+.songName:hover {
+  color: #3399CC;
+  transform: scale(1.2, 0,5);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.songName a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.songName a:hover {
+  color: #3399CC;
+  transform: scale(1.2, 0,5);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.singers {
+  font-size: 13px;
+  font-family: poppins-medium, Arial, sans-serif;
+}
+
+

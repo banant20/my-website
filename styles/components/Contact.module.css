@@ -1,0 +1,119 @@
+.title {
+    font-family: 'horizon', Arial, sans-serif;
+    font-size: 36px;
+    color: #3399CC;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-bottom: 2rem;
+    padding-right: 13rem;
+    font-family: poppins-medium, Arial, sans-serif;
+    padding-left: 13rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+    padding-bottom: 5rem;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: poppins-medium, Arial, sans-serif;
+    background-color: #bdedff46;
+}
+
+.form textarea {
+    min-height: 150px;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputHalf {
+    width: calc(50% - 0.5rem);
+    margin-right: 0.5rem;
+}
+
+.flexRow :last-child .inputHalf {
+    margin-right: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 3px solid #3399CC;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius: 25px;
+    width: 40%;
+}
+   
+.button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3399CC67;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+    z-index: -1;
+}
+   
+.button:hover::before {
+    transform: translateX(0);
+}
+
+.footerContainer {
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    background-color: white; /* Choose your desired color */
+    color: #2F539B;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'horizon-o', Arial, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-bottom: 3rem;
+  }
+
+  .specialFont {
+    font-family: 'horizon', Arial, sans-serif;
+    padding-right: 0.5rem;
+    font-size: 30px;
+  }
+  
+
