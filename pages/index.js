@@ -2,8 +2,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Typewriter from 'typewriter-effect';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
 import dynamic from 'next/dynamic';
 
@@ -24,13 +22,37 @@ export default function Home() {
         setIsScrolled(false);
       }
     };
-
+    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      const startPosition = window.pageYOffset;
+      const targetPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset;
+      const offset = -155; 
+      const duration = 1000; 
+      const startTime = performance.now();
+  
+      const animateScroll = (currentTime) => {
+        const elapsedTime = currentTime - startTime;
+        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        const position = startPosition + (targetPosition - startPosition + offset) * easeInOutQuad(elapsedTime / duration);
+  
+        window.scroll(0, position);
+  
+        if (elapsedTime < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      requestAnimationFrame(animateScroll);
+    }
+  };
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -60,11 +82,8 @@ export default function Home() {
                 }}
               />
             </h2>
-          <FontAwesomeIcon
-            icon={faCircleArrowDown}
-            className={styles.icon}
-            style={{ color: '#3399cc' }}
-          />
+            <img src="/images/circle-button.png" alt="Scroll Down Button" className={styles.icon} onClick={scrollToAbout} />
+
           </div>
           <section id="about">
             <About />
