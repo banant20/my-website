@@ -169,12 +169,11 @@
 
 .icon {
   animation: bounce 1.7s infinite;
-  width: 50px;
+  width: 65px;
   position: absolute;
   bottom: 20px;
   filter: brightness(0) saturate(100%) invert(100%);
-  margin: 0;
-  padding: 0;
+  padding-left: 9px;
 }
 
 .icon:hover {
