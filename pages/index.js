@@ -5,11 +5,13 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/Header';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Music from '../components/Music';
-import Travel from '../components/Travel'; 
-import Contact from '../components/Contact';
+import dynamic from 'next/dynamic';
+
+const Music = dynamic(() => import('../components/Music'));
+const Travel = dynamic(() => import('../components/Travel'));
+const Contact = dynamic(() => import('../components/Contact'));
+const Skills = dynamic(() => import('../components/Skills'));
+const About = dynamic(() => import('../components/About'));
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(true); 

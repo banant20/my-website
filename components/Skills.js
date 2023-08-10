@@ -162,7 +162,7 @@ const Skills = () => {
                 <span className={styles.imgcontentText}>Data Analysis <br/> & <br/> Database Management</span>
               </div>
               <div className={styles.content}>
-              Pandas<br/>Numpy<br/>SQL<br/>SQL Server Management Studio<br/>R Studio<br/>
+              Pandas<br/>Numpy<br/>Apache Arrow<br/>SQL<br/>SQL Server Management Studio<br/>R Studio<br/>
               </div>
             </div>
           </div>

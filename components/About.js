@@ -23,19 +23,19 @@ const About = () => {
           playing with my dogs, listening to music, working out, cooking, and being a prideful diehard Detroit sports fan!
         </p>
         <div className={styles.iconContainer}>
-          <Link href="https://www.linkedin.com/in/anantbajaj/">
+          <Link href="https://www.linkedin.com/in/anantbajaj/" prefetch={false}>
             <FontAwesomeIcon icon={faLinkedinIn} className={styles.icon}/>
           </Link>
-          <Link href="https://github.com/banant20">
+          <Link href="https://github.com/banant20" prefetch={false}>
             <FontAwesomeIcon icon={faGithub} className={styles.icon}/>
           </Link>
-          <Link href="https://www.instagram.com/anantbajaj/">
+          <Link href="https://www.instagram.com/anantbajaj/" prefetch={false}>
             <FontAwesomeIcon icon={faInstagram} className={styles.icon}/>
           </Link>
-          <Link href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwrzjLtLVvBHRdhbGQlbGSRZpWKfVGKTtdbrgxqWCCNSTtGCFwmJGhbMHCRfkvtBZLsBCN">
+          <Link href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwrzjLtLVvBHRdhbGQlbGSRZpWKfVGKTtdbrgxqWCCNSTtGCFwmJGhbMHCRfkvtBZLsBCN" prefetch={false}>
             <FontAwesomeIcon icon={faSquareEnvelope} className={styles.icon}/>
           </Link>
-          <Link href="https://open.spotify.com/user/anantb13">
+          <Link href="https://open.spotify.com/user/anantb13" prefetch={false}>
             <FontAwesomeIcon icon={faSpotify} className={styles.icon}/>
           </Link>
         </div>

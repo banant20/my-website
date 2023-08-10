@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.logoContainer}>
-        <Link href="/" passHref>
+        <Link href="/" passHref prefetch={false}>
           <div onClick={scrollToTop}>
             <img src="/images/logo.png" alt="Logo" className={styles.logo} />
           </div>
