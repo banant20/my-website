@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Link as ScrollLink, animateScroll, Element } from 'react-scroll';
-import styles from '../styles/components/header.module.css';
+import styles from '../styles/components/Header.module.css';
 import ProgressBar from "react-scroll-progress-bar";
 
 const Header = () => {

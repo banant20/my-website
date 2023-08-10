@@ -1,6 +1,6 @@
 import * as React from "react";
 import WorldMap from "react-svg-worldmap";
-import styles from '../styles/components/travel.module.css';
+import styles from '../styles/components/Travel.module.css';
 
 
 const Travel = () => {

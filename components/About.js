@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/about.module.css';
+import styles from '../styles/components/About.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

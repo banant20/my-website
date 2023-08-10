@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/components/music.module.css';
+import styles from '../styles/components/Music.module.css';
 
 const Music = () => {
   const [nowPlaying, setNowPlaying] = useState(null);

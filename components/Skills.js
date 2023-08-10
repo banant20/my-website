@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/components/skills.module.css';
+import styles from '../styles/components/Skills.module.css';
 
 const School = ({ logoSrc, years, location, name, description, paragraph }) => (
   <div className={styles.school}>
