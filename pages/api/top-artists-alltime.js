@@ -5,7 +5,7 @@ export default async (_, res) => {
   const { items } = await response.json()
 
   const artists = items.slice(0, 10).map((track) => ({
-    name: track.name,
+    artist: track.name,
     artistImageUrl: track.images[0].url,
     artistUrl: track.external_urls.spotify
   }))
