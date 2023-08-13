@@ -22,3 +22,28 @@
     font-family: poppins-medium, Arial, sans-serif;
     padding-left: 13rem;
 }
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    #__next {
+        display: flex
+      }
+  
+    .title {
+      font-size: 28px; /* Reduce font size for mobile */
+      margin-bottom: 1.5rem;
+    }
+  
+    .center {
+      font-size: 16px; /* Adjust text size for mobile */
+      padding-left: 1rem; /* Reduce padding on mobile */
+      padding-right: 1rem;
+    }
+  }

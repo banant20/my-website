@@ -217,4 +217,67 @@
     color: #a2a1a2;
     padding-bottom: 2rem;
   }
+
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+
+  /* Mobile-specific styles */
+@media (max-width: 600px) {
+  #__next {
+    display: flex
+  }
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+
+  .sideMenu {
+    position: static;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sections {
+    margin: 0;
+    width: 100%;
+  }
+
+  .schoolLogo {
+    width: 50px; /* Adjusted for mobile */
+    height: 50px; /* Adjusted for mobile */
+  }
+
+  .school {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .schoolLogo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .cardWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardContainer {
+    margin-bottom: 1.5rem; /* Spacing between cards in mobile view */
+  }
+}
   

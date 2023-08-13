@@ -115,5 +115,61 @@
     padding-right: 0.5rem;
     font-size: 30px;
   }
+
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+  }
+  /* Mobile-specific styles */
+@media (max-width: 600px) {
+    #__next {
+        display: flex
+    }
+    .title {
+      font-size: 28px; /* Reduce font size for mobile */
+      margin-bottom: 1.5rem;
+    }
   
+    .center {
+      font-size: 14px; /* Adjust text size for mobile */
+      padding-left: 1rem; /* Reduce padding on mobile */
+      padding-right: 1rem;
+    }
+  
+    .form {
+      padding: 0.5rem;
+    }
+  
+    .form input,
+    .form textarea {
+      padding: 0.4rem; /* Adjust padding for inputs and text areas */
+    }
+  
+    .flexRow {
+      flex-direction: column; /* Stack the input fields vertically on mobile */
+    }
+  
+    .inputHalf {
+      width: 100%; /* Make each input field take the full width on mobile */
+      margin-right: 0;
+      margin-bottom: 0.5rem; /* Add some vertical space between input fields */
+    }
+  
+    .button {
+      width: 100%; /* Make the button take the full width on mobile */
+      font-size: 15px; /* Reduce font size for mobile */
+    }
+  
+    .footerContainer {
+      padding-top: 2rem;
+      padding-bottom: 2rem; /* Adjust the padding for the footer container */
+      font-size: 18px; /* Adjust font size for mobile */
+    }
+  
+    .specialFont {
+      font-size: 26px; /* Adjust font size for the special font text */
+    }
+  }
 

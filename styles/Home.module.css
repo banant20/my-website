@@ -7,7 +7,6 @@
   align-items: center;
 }
 
-
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -25,12 +24,10 @@
   font-size: 3.6rem;
 }
 
-
 .title,
 .description {
   text-align: center;
 }
-
 
 .description {
   line-height: 1.5;
@@ -42,7 +39,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
   margin-top: 3rem;
 }
@@ -81,7 +77,6 @@
   height: 1em;
 }
 
-/* Home.module.css */
 .header {
   display: flex;
   flex-direction: column;
@@ -133,9 +128,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .footer img {
   margin-left: 0.5rem;
 }
+
 .footer a {
   display: flex;
   justify-content: center;
@@ -143,6 +140,7 @@
   text-decoration: none;
   color: inherit;
 }
+
 .code {
   background: #fafafa;
   border-radius: 5px;
@@ -189,10 +187,38 @@
   }
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+}
 @media (max-width: 600px) {
+  #__next {
+    display: flex
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .bigText {
+    font-size: 2.5rem;  /* Adjusting the font size for mobile */
+  }
+
+  .smallText {
+    font-size: 1.5rem;  /* Adjusting the font size for mobile */
+  }
+
+  .center {
+    height: auto;  /* Allowing the height to be auto on mobile for better content flow */
+    padding: 1rem;  /* Adding some padding to prevent content being too close to screen edges */
+  }
+
+  .icon {
+    width: 50px;  /* Reducing the icon size for mobile */
+    bottom: 10px;  /* Adjusting the icon position */
   }
 }
 
@@ -225,4 +251,3 @@
   font-family: poppins-medium;
   src: url(../public/Poppins-Regular.otf);
 }
-

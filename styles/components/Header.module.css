@@ -80,3 +80,41 @@
   color: #333;
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  #__next {
+    display: flex
+  }
+  
+  .header, .scrolled {
+    padding: 0.5rem; /* Reduce padding on mobile */
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: center; /* Center the logo and navigation */
+  }
+
+  .logo-container {
+    padding-left: 1rem; /* Reduce padding on mobile */
+  }
+
+  .logo {
+    width: 120px; /* Make the logo smaller on mobile */
+    margin-left: 1rem;
+  }
+
+  .nav {
+    display: none; /* Hide the navigation items on mobile for simplicity */
+  }
+
+  /* If you want to show navigation items as a dropdown or any other pattern on mobile, 
+  you might need to introduce additional styles or even JavaScript to handle interactions */
+
+}
+
