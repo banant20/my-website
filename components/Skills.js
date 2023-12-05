@@ -87,6 +87,14 @@ const Skills = () => {
         <div id="educationSection" className={styles.section}>
           <h2>Education</h2>
           <School 
+            logoSrc="/images/ross.png"
+            years="2024-2025" 
+            location="Ann Arbor, Michigan" 
+            name="University of Michigan - Ross School of Buisness" 
+            description="Master of Business Analytics (MBAn)" 
+            paragraph="Data Analytics & Business Management"
+          />
+          <School 
             logoSrc="/images/umich.png"
             years="2020-2024" 
             location="Ann Arbor, Michigan" 
