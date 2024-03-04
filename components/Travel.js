@@ -40,7 +40,9 @@ const Travel = () => {
         { country: "is", value: " " }, // iceland
         { country: "au", value: " " }, // australia
         { country: "nz", value: " " }, // new zealand
-
+        { country: "br", value: " " }, // brazil
+        { country: "cl", value: " " }, // chile
+        { country: "ar", value: " " }, // argentina
       ];
     
       return (

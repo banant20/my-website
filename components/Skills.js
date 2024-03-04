@@ -118,7 +118,7 @@ const Skills = () => {
           <h2>Experience & Extracurriculars</h2>
           <School 
             logoSrc="/images/urbansci.png"
-            years="May 2023-Present" 
+            years="May 2023-August 2023" 
             location="Detroit, Michigan" 
             name="Data Engineer Intern"
             description="Urban Science" 
