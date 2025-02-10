@@ -43,7 +43,7 @@ const Travel = () => {
         { country: "br", value: " " }, // brazil
         { country: "cl", value: " " }, // chile
         { country: "ar", value: " " }, // argentina
-        { country: "sp", value: " " }, // spain
+        { country: "es", value: " " }, // spain
         { country: "cz", value: " "}, // czech republic
       ];
     
