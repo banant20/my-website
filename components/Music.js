@@ -51,9 +51,9 @@ const Music = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>Music </div>
-      <div className={styles.center}>As an ardent lover of music, I created this section to showcase not only my diverse taste 
+      <div className={styles.center}>I'm obssesed with music. I created this section to showcase not only my diverse taste 
         but also provide a space where I can play around with integrating real-time data leveraging the Spotify API. Here, you'll find a window into my current musical taste, 
-        featuring my currently playing song, which is what I'm presently vibing to. <br/> <br/>
+        featuring my currently playing song, which is what I'm vibing to at the moment. <br/> <br/>
         
         Dive into the Top 10 Artists and Top 10 Songs sections, where you can filter the results based on the past 4 weeks, 6 months, and even All Time.
         Many of these these songs and artists have found their way into the very fabric of my being. I believe that understanding one's music 

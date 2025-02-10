@@ -92,7 +92,8 @@ const Skills = () => {
             location="Ann Arbor, Michigan" 
             name="University of Michigan - Ross School of Buisness" 
             description="Master of Business Analytics (MBAn)" 
-            paragraph="Data Analytics & Business Management"
+            paragraph="Relevant Coursework: Software Teams & Project Management, Decision Strategies, Prescriptive & Predictive Analytics, Marketing Analytics, 
+                       Unsupervised Learning, Data Architecture & Acquisition, Causal Inference Through Experimentation, AI for Business"
           />
           <School 
             logoSrc="/images/umich.png"

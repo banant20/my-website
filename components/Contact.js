@@ -46,7 +46,7 @@ const Contact = () => {
                 </form>
             </div>
             <div className={styles.footerContainer}>
-                <span className={styles.specialFont}> © </span> Anant Bajaj 2023
+                <span className={styles.specialFont}> © </span> Anant Bajaj 2025
             </div>
         </>
     );
